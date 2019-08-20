@@ -1,80 +1,30 @@
 {
-  "_from": "@types/web3@^1.0.18",
-  "_inBundle": false,
-  "_integrity": "sha512-fhZ9DyvDYDwHZUp5/STa9XW2re0E8GxoioYJ4pEUZ13YHpApSagixj7IAdoYH5uAK+UalGq6Ml8LYzmgRA/q+A==",
-  "_location": "/@types/web3",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "range",
-    "registry": true,
-    "raw": "@types/web3@^1.0.18",
-    "name": "@types/web3",
-    "escapedName": "@types%2fweb3",
-    "scope": "@types",
-    "rawSpec": "^1.0.18",
-    "saveSpec": null,
-    "fetchSpec": "^1.0.18"
+  "name": "conflux-web",
+  "version": "0.0.1",
+  "description": "typescript for conflux-web",
+  "main": "index.d.ts",
+  "directories": {
+    "test": "test"
   },
-  "_requiredBy": [
-    "#DEV:/"
-  ],
-  "_resolved": "https://registry.npmjs.org/@types/web3/-/web3-1.0.19.tgz",
-  "_shasum": "46b85d91d398ded9ab7c85a5dd57cb33ac558924",
-  "_spec": "@types/web3@^1.0.18",
-  "_where": "/Users/liping/about_truffle-conflux/truffle-conflux/packages/truffle-conflux-interface-adapter",
-  "bugs": {
-    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
-  },
-  "bundleDependencies": false,
-  "contributors": [
-    "Simon Jentzsch (https://github.com/simon-jentzsch)",
-    "Nitzan Tomer (https://github.com/nitzantomer)",
-    "Zurbo (https://github.com/zurbo)",
-    "Xiao Liang (https://github.com/yxliang01)",
-    "Francesco Soncina (https://github.com/phra)",
-    "Nick Addison (https://github.com/naddison36)",
-    "Ícaro Harry (https://github.com/icaroharry)",
-    "Linus Norton (https://github.com/linusnorton)",
-    "Javier Peletier (https://github.com/jpeletier)",
-    "HIKARU KOBORI (https://github.com/anneau)",
-    "Baris Gumustas (https://github.com/matrushka)",
-    "André Vitor de Lima Matos (https://github.com/andrevmatos)",
-    "Levin Keller (https://github.com/levino)",
-    "Dmitry Radkovskiy (https://github.com/zlumer)",
-    "Konstantin Melnikov (https://github.com/archangel-irk)",
-    "Asgeir Sognefest (https://github.com/sogasg)",
-    "Donam Kim (https://github.com/donamk)",
-    "Doug Kent (https://github.com/dkent600)",
-    "Daniel Zhou (https://github.com/nerddan)",
-    "Alex Kvak (https://github.com/alexkvak)"
-  ],
   "dependencies": {
     "@types/bn.js": "*",
     "@types/underscore": "*"
   },
-  "deprecated": false,
-  "description": "TypeScript definitions for web3",
-  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
-  "license": "MIT",
-  "main": "index.js",
-  "name": "@type/conflux-web",
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-    "directory": "types/web3"
+    "url": "git+https://github.com/liuis/typescript-conflux-web.git"
   },
-  "scripts": {},
-  "typeScriptVersion": "2.8",
-  "types": "index",
-  "typesPublisherContentHash": "5318788bbb1f7c38748d89ce01106b3d96ec12b5b4b6ac136bdf76da2e99cbe8",
-  "version": "0.0.1",
-  "directories": {
-    "test": "test"
-  },
-  "devDependencies": {},
   "keywords": [
-    "conflux",
-    "web3"
+    "conflux-chain"
   ],
-  "author": "ping.li@conflux-chain.org"
+  "author": "ping.li@conflux-chain.org",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuis/typescript-conflux-web/issues"
+  },
+  "homepage": "https://github.com/liuis/typescript-conflux-web#readme"
 }

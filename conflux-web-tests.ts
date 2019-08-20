@@ -38,7 +38,7 @@ web3.cfx.setProvider(myProvider);
 // web3.cfx
 // --------------------------------------------------------------------------
 const logs: Promise<Log[]> = web3.cfx.getPastLogs({
-    fromBlock: "latest",
+    fromBlock: "latest_state",
     address: contractAddress,
     topics: [
         null,
@@ -47,9 +47,9 @@ const logs: Promise<Log[]> = web3.cfx.getPastLogs({
 });
 const storage: Promise<string> = web3.cfx.getStorageAt(contractAddress, 0);
 const balance1: Promise<string> = web3.cfx.getBalance(contractAddress);
-const balance2: Promise<string> = web3.cfx.getBalance(contractAddress, "latest");
+const balance2: Promise<string> = web3.cfx.getBalance(contractAddress, "earliest");
 const balance3: Promise<string> = web3.cfx.getBalance(contractAddress, 1);
-web3.cfx.getBalance(contractAddress, "latest", (error: Error, balance: string) => { });
+web3.cfx.getBalance(contractAddress, "earliest", (error: Error, balance: string) => { });
 web3.cfx.getBalance(contractAddress, 1, (error: Error, balance: string) => { });
 
 const sendSignedTransactionTxReceipt0: PromiEvent<TransactionReceipt> = web3.cfx.sendSignedTransaction("",
@@ -173,7 +173,7 @@ const myContractNewAbi = new web3.cfx.Contract(NEW_ABI_STANDARD);
 const weiStr: string = web3.utils.toWei("100", "gwei");
 const weiBn: BigNumber = web3.utils.toWei(web3.utils.toBN("1"));
 // $ExpectError
-const weiNumber = web3.utils.toWei(100);
+//const weiNumber = web3.utils.toWei(100);
 
 const rndHex: string = Web3.utils.randomHex(10);
 const sha3: string = web3.utils.soliditySha3(0, 1, "abc");
