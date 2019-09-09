@@ -5,18 +5,16 @@ import PromiEvent from "../promiEvent";
 import ABI from "./abi";
 import Accounts from "./accounts";
 import {
-    BatchRequest,
-    Iban,
-    BlockHeader,
-    CompileResult,
-    Block,
-    Transaction,
-    Tx,
-    BlockType,
-    Net
-    //Net,
-    //Personal
-} from "./types";
+  BatchRequest,
+  Iban,
+  BlockHeader,
+  CompileResult,
+  Block,
+  Transaction,
+  Tx,
+  BlockType,
+  Net,
+} from './types';
 import {
     Callback,
     TransactionReceipt,
@@ -26,7 +24,6 @@ import {
     EncodedTransaction
 } from "../types";
 
-//export default interface Eth {
 export default interface Cfx {
     defaultAccount: string;
     defaultBlock: BlockType;
@@ -153,12 +150,6 @@ export default interface Cfx {
         index: number,
         cb?: Callback<Transaction>
     ): Promise<Transaction>;
-    getUncle(
-        blockHashOrBlockNumber: BlockType | string,
-        uncleIndex: number,
-        returnTransactionObjects?: boolean,
-        cb?: Callback<Block>
-    ): Promise<Block>;
     getWork(cb?: Callback<string[]>): Promise<string[]>;
     givenProvider: Provider;
     isMining(cb?: Callback<boolean>): Promise<boolean>;
