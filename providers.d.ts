@@ -1,18 +1,18 @@
-interface JsonRPCRequest {
-    jsonrpc: string;
-    method: string;
-    params: any[];
-    id: number;
+export interface JsonRPCRequest {
+  jsonrpc: string;
+  method: string;
+  params: any[];
+  id: number;
 }
 
-interface JsonRPCResponse {
-    jsonrpc: string;
-    id: number;
-    result?: any;
-    error?: string;
+export interface JsonRPCResponse {
+  jsonrpc: string;
+  id: number;
+  result?: any;
+  error?: string;
 }
 
-interface Callback<ResultType> {
+export interface Callback<ResultType> {
   (error: Error): void;
   (error: null, val: ResultType): void;
 }
@@ -64,3 +64,5 @@ export default interface Providers {
     HttpProvider: new (host: string, timeout?: number) => HttpProvider;
     IpcProvider: new (path: string, net: any) => IpcProvider;
 }
+
+export {};
