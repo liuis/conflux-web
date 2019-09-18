@@ -6,4 +6,8 @@ You can find the PR at the following address: https://github.com/DefinitelyTyped
 
 -----------
 
-If you want to manually perform, please clone this project in node_modules / @ types directory
+If you want to manually perform, please clone this project in node_modules / @ types directory,  other way,
+
+in package.json add this :
+
+"@types/conflux-web": "git+ssh://git@github.com:liuis/conflux-web.git"
